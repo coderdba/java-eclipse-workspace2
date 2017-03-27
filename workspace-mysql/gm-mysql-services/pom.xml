@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>gm.mysql</groupId>
+  <artifactId>gm-mysql-services</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>gm-mysql-services Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- javax-rs rest services -->
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>javax.ws.rs-api</artifactId>
+      <version>2.0</version>
+      <scope>compile</scope>
+    </dependency>
+    
+    <!-- Regular servlet -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>compile</scope>
+    </dependency>    
+    
+    <!-- Jersey -->
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet-core</artifactId>
+      <version>2.22.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
+      <version>2.22.2</version>
+      <scope>compile</scope>
+    </dependency>
+    
+    <!-- Jackson -->
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>2.23</version>
+    </dependency>
+    
+    <!-- 
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.7.4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+      <version>2.7.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-base</artifactId>
+      <version>2.7.4</version>
+    </dependency>
+    -->
+    
+    <!-- Own jars -->
+    <dependency>
+        <groupId>gm.mysql</groupId>
+        <artifactId>gm-mysql-dh</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <scope>compile</scope>
+    </dependency>
+  </dependencies>
+   
+  <build>
+    <finalName>gm-mysql-services</finalName>
+  </build>
+  
+</project>

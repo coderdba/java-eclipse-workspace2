@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+<form name="helloForm" action="HelloAgain" method="GET"  onsubmit="valthisform();">
+<br>
+<br><b> MY LIKES </b>
+<br>
+First Name: <input type="text" name="first_name" required>
+<br />
+Last Name: <input type="text" name="last_name"  required />
+<br>
+<input type="radio" name="modifyValues" value="uppercase" required="required">Convert to uppercase <br>
+<input type="radio" name="modifyValues" value="lowercase" required="required">Convert to lowercase <br>
+<input type="radio" name="modifyValues" value="asis"      required="required" checked="checked">Do not convert <br>
+<br>
+<input type="checkbox" name="likes" value="maths"     /> Maths
+<input type="checkbox" name="likes" value="physics"   /> Physics
+<input type="checkbox" name="likes" value="chemistry" /> Chemistry
+<br>
+
+<button onclick="submit">Submit</button>
+
+<!-- input type="submit" value="submit" / -->
+
+<script>
+<!---
+function valthisform()
+{
+	var checkboxs=document.getElementsByName("likes");
+    var okay=false;
+    for(var i=0,l=checkboxs.length;i<l;i++)
+    {
+        if(checkboxs[i].checked)
+        {
+            okay=true;
+            break;
+        }
+    }
+    if (!okay) 
+    { 
+    	alert("Please check a checkbox");
+    	event.preventDefault(); 
+
+    }
+    else
+    	{
+    	}
+}
+-->
+</script>
+
+
+</form>
+</body>
+</html>
